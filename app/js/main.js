@@ -799,6 +799,7 @@ const LONG = (function() {
                 determineFull();
                 determinePlan();
                 determineTerm();
+                determineLiability();
                 return false;
             }
             
