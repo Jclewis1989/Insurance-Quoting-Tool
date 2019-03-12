@@ -660,6 +660,15 @@ const LONG = (function() {
         }
     }
 
+    let determineLiability = () => {
+        if(liability_only.checked === true) {
+            vip.checked = false;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     // END VALIDATION
     // =========================================================================
     // END VALIDATION
@@ -780,7 +789,7 @@ const LONG = (function() {
         validateFields();
         btn.addEventListener('click', function (e) {
             // let multiCarDiscount = niko(); //* m();
-            if(determineCov() === true && determineFull() === true && determinePlan() === true && determineTerm() === true) {
+            if(determineCov() === true && determinePlan() === true && determineTerm() === true && (determineFull() === true || determineLiability() === true)) {
                 premium = calcRates() + umCov() + wtrCov() + liabilityCov() + v() + b();
                 loadQuote();
                 return true;
