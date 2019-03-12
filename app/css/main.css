@@ -1,0 +1,81 @@
+
+body {
+    font-family:Helvetica;
+    font-size:16px;
+    background-color: #fff
+}
+
+.container {
+    margin: auto;
+}
+
+.total, #demo {
+    font-size:22px;
+    font-weight: bold;
+    text-align:center;
+}
+
+li {
+    font-weight:normal;
+    list-style:none;
+}
+
+.opt {
+    font-weight:bold;
+}
+
+.jumbotron {
+    background-color:#fff;
+}
+
+.form {
+    background-color:#fff;
+    padding: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+div.img {
+    margin: 0 40% 0 40%;
+}
+
+.error {
+    text-decoration: line-through;
+    color: #800000;
+}
+
+.error2 {
+    border: 1px solid #980000;
+}
+
+.red {
+    color: #800000;
+    text-align: center;
+}
+
+footer p {
+font-family:Helvetica;
+font-size:14px;
+color:#222;
+line-height: 1.5;
+}
+
+.ctabtn {
+    float: right;
+}
+
+
+footer {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header--navbar {
+    margin-left:5px;
+    width:100%;
+}
+
+.header--navbar li a button {
+    float: right;
+}

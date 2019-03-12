@@ -1,0 +1,290 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    	<!-- Loading Font Awesome Icons -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Loading Drunken Parrot UI
+	<link href="css/drunken-parrot.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+    -->
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+  
+    <div class="container">
+
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-12 body col-lg-12 col-sm-12 col-xs-12">
+                    <nav class="navbar navbar-default navbar-fixed-top">
+                            <div class="container">
+                              <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                  <span class="sr-only">Toggle navigation</span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Mexican Tourist Auto Insurance</a>
+                              </div>
+                              <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                  <li><a href="index.html">Long Term Quotations</a></li>
+                                  <li class="active"><a href="short.html">Short Term Quotations</a></li>
+                                </ul>
+                              </div><!--/.nav-collapse -->
+                            </div>
+                          </nav>
+                    <div class="form">
+                       
+                        <div class="policy_data">
+
+                            <h2>Tourist Auto Short Term Quotation</h2>
+                            
+
+                            <p>Please select Full Coverage or Liability Only:</p>
+
+                            <label for="full_coverage">
+              Full Coverage <input type="radio" id="full_coverage" name="policy_type">
+            </label>
+
+                            <label for="liability_only">
+              Liability Only<input type="radio" id="liability_only" name="policy_type">
+            </label> 
+            <p><span class="coverage__type"></span></p>
+            <br>
+
+
+
+                            <section class="coverage_decision">
+                                <aside class="content">
+                                    <h4>Full Coverage</h4>
+                                    <p class="small_para">Labor rates pay for a Repair in the USA, Canada or Mexico. Your choice! Collision, Upset, Glass Breakage, Fire & Total Theft, fixed deductibles of $500 and/or $500.</p>
+                                </aside>
+                                <aside class="content">
+                                    <h4>Liability Only</h4>
+                                    <p class="small_para">Liability $500,000 Combined Single limit, medical payments $10,000 per Person / $50,000 per Accident, AUSA One Call 24/7 travel assistance dispatch, International Air Ambulance to USA and Canada, $100,000 Legal Service.</p>
+                                </aside>
+                                
+                            </section>
+
+                            <hr>
+
+                            <p>Select your dates</p>
+                            <p class="small_para">All policies begin and end at noon PT by default.</p>
+
+
+
+
+                            <section class="plan_decision">
+                                <div class="form-group">
+                                        <label for="eff_date">Effective Date:
+                                                <input type="date" id="eff_date" class="form-control"></input>
+                                            </label>
+                                            <p><span class="dateError"></span></p>
+                                </div>
+                          
+                                <div class="form-group">
+                                        <label for="eff_date">Expiration Date:
+                                                <input type="date" id="ex_date" class="form-control"></input>
+                                            </label>
+                                            <p><span class="dateError2"></span></p>
+                                </div>
+                                </section>
+                        
+
+                            <hr>
+
+
+
+              <p class="strong">Please provide the value of your vehicle in U.S. Currency.</p>
+                <p class="dollar_sign">My vehicle is worth $
+                    <div class="form-group">
+                        <label for="vehicle_value">
+                <input type="text" id="vehicle_value" name="vehicle_value" placeholder="Vehicle Value Please" class="form-control">
+                </label>
+            </div>
+                </p>
+                <p class="small_para">Need to check your <strong>CMV</strong>?</p>
+                    <p><a href="http://www.kbb.com" target="_blank" >Kelly Blue Book</a></p>
+
+                            <hr>
+
+
+                        </div>
+
+                        <p>Do you need any additional coverage?</p>
+
+                        <div class="optional_coverage">
+                            <label for="uninsured_motorist">
+                <li>
+                    <input type="checkbox" name="uninsured_motorist" id="uninsured_motorist" class="opt"> <strong>Uninsured Motorist</strong> <p class="small_para">Increases the insured limit of Medical Payments to $20,000 per person; $100,000 per accident. In the event that an uninsured or underinsured motorist damages the insured vehicle, the collision deductible charged will be $0. Adds Uninsured Underinsured Motorist Property Damage $3,500 to Liability Only policies.</p>
+                </li>
+              </label>
+
+                            <label for="excess_1">
+                <li>
+                <input type="checkbox" class="excess_liability" id="excess_1"> <strong>$750,000 Liability</strong> <p class="small_para">Increases the insured Liability amount to $750,000 Combined Single Limit.</p>
+                </li>
+              </label><br>
+
+                            <label for="excess_2">
+                <li>
+                <input type="checkbox" class="excess_liability" id="excess_2"> <strong>$1,000,000 Liability</strong> <p class="small_para">Increases the insured Liability amount to $1,000,000 Combined Single Limit.</p>
+                </li>
+              </label>
+
+                            <label for="watercraft_liability">
+                <li>
+                <input type="checkbox" name="watercraft_liability" id="watercraft_liability" class="wtr"> <strong>Watercraft Liability</strong> <p class="small_para">Adds Liability of $300,000 CSL for watercraft not exceeding 28 while afloat or being launched. Excludes Physical Damage to the Watercraft. If you need more coverage, please go to the application for Watercraft Insurance.</p>
+                </li>
+              </label>
+
+                            <label for="business_use">
+                <li>
+                <input type="checkbox" name="business_use" id="business_use" class="opt"> <strong>Business Use</strong> <p class="small_para">Allows the insured vehicle to be used for business. (Coverage does not extend to livery service operations.)</p>
+                </li>
+              </label>
+
+                            <label for="vip">
+                <li>
+                <input type="checkbox" name="vip" id="vip" class="opt"> <strong>VIP</strong> <p class="small_para">VIP Adds the perils of Vandalism , Partial Theft and Flash Flood. VIP Adds Emergency Expense for Lodging, Food, Clothing and Transportation (2 times premium up to $500 maximum). The Glass Deductible is REDUCED to $100. The deductible for Vandalism is $250. The deductible for $Partial Theft is $250. The deductible for Flash Flood is $500. (VIP coverage is not available for Liability Only or Driver License policies).</p>
+                </li>
+              </label>
+                            <hr>
+
+                            <br>
+
+                            <section class="calc_total">
+
+                              <button type="button" id="calc" class="form-control btn-info">Calculate Premium</button>
+                            
+
+
+                      </section>
+
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="quote">
+                      <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <div class="panel panel-success">
+                                    <div class="panel-heading">
+                                        <h4 class="text-center">
+                                            Mexican Tourist Auto Quotation</h4>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><i class="icon-ok text-danger"></i><strong>Coverage Type:</strong> <span id="demo3"></span></li>
+                                        <li class="list-group-item"><i class="icon-ok text-danger"></i><strong>Coverage Territory:</strong> All of Mexico</li>
+                                        <li class="list-group-item"><i class="icon-ok text-danger"></i><strong>Coverage Term:</strong> <span id="demo4"></span></li>
+                                        <li class="list-group-item"><i class="icon-ok text-danger"></i><strong>Optional Coverage: </strong> <span id="demo5"></span></li>
+                                        <li class="list-group-item"><i class="icon-ok text-danger"></i><strong>Policy Coverage Includes: </strong>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">$500,000 CSL USD Liability for Bodily Injury and Property Damage.</li>
+                                                <li class="list-group-item">$50,000 USD Medical Payments per accident, $10,000 USD per person.</li>
+                                                <li class="list-group-item"><strong>Uninsured Motorist</strong> using the same Medical Payments limits</li>
+                                                <li class="list-group-item"><strong>$100,000 USD Legal Service</strong> Bail Bond, Attorney, Criminal and Civil Defense.</li>
+                                                <li class="list-group-item"><strong>Qualitas</strong> One Call 24/7 Claim Dispatch 01 (800) 800 - 2880</li>
+                                                <li class="list-group-item"><strong>GRUPO AUSA</strong> Tourist Travel Assistance inclues:
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item"><strong>International Air Ambulance</strong> for a <strong>Life Threatening Illness or Accident</strong></li>
+                                                        <li class="list-group-item">Flights from Mexico to: Vancouver, BC Canada, San Diego, CA USA, Houston, TX USA</li>
+                                                        <li class="list-group-item">Trip Continuation or return home</li>
+                                                        <li class="list-group-item">Plan tickets $150 USD per person $750 USD per event</li>
+                                                        <li class="list-group-item">Towing $300 USD per trip</li>
+                                                        <li class="list-group-item">Gasonline to reach the nearest service station</li>
+                                                        <li class="list-group-item">Jumpstart and battery recharge</li>
+                                                        <li class="list-group-item">Flat tire change and / or deliver flat tir for repair</li>
+                                                        <li class="list-group-item">Locksmith Payment for repair and his travel cost</li>
+                                                        <li class="list-group-item">Rental Car for 2 days</li>
+                                                    </ul>
+                                                </li>
+                                          </ul>
+                                        </li>
+                                        <li class="list-group-item"><i class="icon-ok text-danger"></i><strong>Full Coverage adds:</strong>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Labor Rates: Qualitas pays the USA hourly labor rate if the vehicle is repaired in the USA.</li>
+                                                <li class="list-group-item">Fixed Deductible of $500 USD: Collision, Fire, Natural Disaster, and Total Theft. (*)For Motorhomes, Travel Trailers, 5th Wheels and / or Cab-Over Campers, the Fixed Deductible is $1,000 USD.</li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item"><i class="icon-ok text-danger"></i><strong>Total cost of Insurance: </strong><span id="demo"></span></li>
+
+                                    </ul>
+                                    <div class="panel-footer">
+                                        <a class="btn btn-md btn-block btn-success" href="#">Order your Coverage</a>
+                                    </div>
+                                </div>
+                          </div>
+                      </div>
+          
+                  
+                    </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <footer class="col-md-12 body col-lg-12 col-sm-12 col-xs-12">
+                <p class="text-center">
+                    <img src="img/logo.png">
+                </p>
+                <p class="text-center">
+                        California Surplus Line Insurance Broker License #0645420<br>
+                        11900 West Olympic Blvd. #475<br>
+                        Los Angeles CA 90064<br>
+                        Phone (310) 207-7700 or (800) 966-6830<br>
+                        Fax (310) 207-7701<br>
+                        Mexican Insurance Broker, Lewis and Lewis Mexico Insurance<br>
+                        <a href="mailto:info@mexicanautoinsurance.com">Info@MexicanAutoInsurance.com</a><br>
+                </p>
+            </p>
+            </footer>
+    </div>
+
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/moment.js"></script>
+        <script src="js/short.js"></script>
+    <!--
+    <script src="js/vendor/bootstrap.js"></script>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="js/checkbox.js"></script>
+    <script src="js/radio.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/toolbar.js"></script>
+    <script src="js/application.js"></script>
+    -->
+    
+    </body>
+    
+    </html>
